@@ -2,14 +2,16 @@ General installation and running:
 - Python 3 is required and all libraries must be python 3 compatible
 - Library dependencies:
   - Pillow
+  - lxml
+  - requests
 - All libraries can be obtained easily from the pip command (https://pypi.python.org/pypi/pip)
-  - Any Unix package should be able to find pip (sudo apt-get install pip)
+  - Any Unix package should be able to find pip (sudo apt-get install python-pip)
 - All of the python programs can be run from the command line with "python3 <File Name>" or "python <File Name" (if python 3 is default).
 
 Descriptions for each of the files:
 ### imageOperations.py ###
 Requires a base image and makes a new image either outlined or grey scaled.
-Prompts the user for the operation to be performed and then the path to the image.
+Prompts the user for the operation to be performed and the path to the image.
 
 ### mouse_com.py ###
 Windows only.
@@ -34,4 +36,15 @@ Possible functions to call:
   tabKey()      (Presses the tab key)
   enterKey()    (Presses the enter key)
 
-*Note: Both of the command libraries can be easily tested by giving the -i option on the command line.
+*Note: Both of the command libraries can be tested by giving the -i option on the command line and calling the functions.
+
+### inflationRpgItems.py ###
+For this mobile game, Inflation RPG, 3 item tables from HTML pages are available on its wiki.
+These pages are cluttered and I only want the tables.
+I take just the tables, modify and save them as separate HTML files.
+The new HTML files are created in the working directory.
+
+The original pages:
+http://inflation-rpg.wikia.com/wiki/Armors
+http://inflation-rpg.wikia.com/wiki/Weapons
+http://inflation-rpg.wikia.com/wiki/Accessories
